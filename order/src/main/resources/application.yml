@@ -4,7 +4,7 @@ spring:
       client:
         config:
           feignName:
-            url: http://remote-service.com
+            url: http://localhost:8081
             connectTimeout: 5000
             readTimeout: 5000
             loggerLevel: full
