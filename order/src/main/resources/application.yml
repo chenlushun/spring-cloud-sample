@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          feignName:
+            url: http://remote-service.com
+            connectTimeout: 5000
+            readTimeout: 5000
+            loggerLevel: full
+            defaultQueryParameters:
+              query: queryValue
+            defaultRequestHeaders:
+              header: headerValue
+            dismiss404: false
